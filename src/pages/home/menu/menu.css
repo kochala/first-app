@@ -1,0 +1,75 @@
+.home-menu{
+    display: flex;
+}
+.home-menu.dark{
+    background-color: black;
+    color: white;
+}
+.home-menu-list{
+    margin-top: 25px;
+    position: relative;
+    font-size: 1.25rem;
+    width: 250px;
+    border-right: 2px solid rgba(0,0,0,0.2) ;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.home-menu-list a{
+    text-decoration: none;
+    color: black;
+}
+.home-menu.dark .home-menu-list a{
+    text-decoration: none;
+    color: white;
+}
+.home-menu-list p{
+    display: flex;
+    align-items: center;
+}
+.home-menu-list p svg{
+    position: absolute;
+    right: 5px;
+    display: none;
+}
+.home-menu-list p:hover svg{
+    display: block;
+}
+
+
+.home-banner{
+    display: flex;
+    width: 900px;
+    height: 350px;
+    background-color: black;
+    margin: 50px;
+}
+.home-banner .home-banner-text{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 0px 50px;
+    color: white;
+    gap: 30px;
+}
+.home-banner .home-banner-text .apple-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+.home-banner .home-banner-text .home-sale{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-right: 110px;
+}
+.home-banner .home-banner-text .home-shop-now a{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    width: 135px;
+    font-size: 1.5rem;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,30 @@
+.last-icons-div{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    /* margin: 150px 0px 150px 0px; */
+    /* gap: 70px; */
+}
+.last-icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.last-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    border: 10px solid #b6b6b9;
+} 
+.last-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+}

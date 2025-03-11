@@ -1,0 +1,91 @@
+.home{
+    padding: 0px 150px 0px 130px;
+}
+.home.dark{
+    background-color: black;
+    color: white;
+}
+.my-main-header-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #db4444;
+    margin-top: 50px;
+}
+.my-flash-icon{
+    display: inline-flex;
+    width: 15px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #db4444;
+}
+.my-main-header{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.my-header-div{
+    position: relative;
+    display: flex;
+    align-items: end;
+    gap: 100px;
+    margin: 20px 0px 20px 0px ;
+}
+.my-header{
+    position: relative;
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.my-header-div .my-scrol-button-div{
+    display: flex;
+    position: absolute;
+    right: 5px;
+}
+
+
+.my-header-div .my-scrol-button-div .my-scrol-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+.my-main-button-div{
+    display: flex;
+    justify-content: center;
+}
+.my-main-button{
+    width: 200px;
+    height: 50px;
+    background-color: #db4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

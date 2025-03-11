@@ -1,0 +1,24 @@
+/* .flash-div{
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+} */
+.flash-timer-div{
+    display: flex;
+    gap: 10px;
+}
+.flash-timer-div .flash-timer{
+    display: flex;
+    flex-direction: column;
+}
+.flash-timer-div .flash-timer .time-number{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.flash-timer-div .flash-point{
+    font-size: 3rem;
+    line-height: 70px; 
+    color: #db4444;
+}

@@ -1,0 +1,79 @@
+.contact-div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-adress-div{
+    font-size: 1.1rem;
+    height: 550px;
+    width: 350px;
+    padding: 50px;
+}
+.contact-adress{
+    width: 250px;
+}
+.coll{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+.adress-title-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #db4444;
+    color: white;
+}
+
+.contact-input-div{
+    width: 800px;
+    height: 450px;
+}
+.contact-input{
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+}
+.contact-input-info{
+    width: 170px;
+    height: 40px;
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+.contact-input-message{
+    width: 700px;
+    height: 230px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    display: flexbox;
+    margin-top:30px ;
+    font-size: 1.1rem;
+}
+.contact-input-message::placeholder{
+   position: absolute;
+   top: 20px;
+   left: 20px;
+}
+.contact-button{
+    width: 180px;
+    height: 50px;
+    background-color: #db4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-left: 520px;
+}

@@ -1,0 +1,54 @@
+.singup-div{
+    margin-top: 150px;
+    align-items: center;
+    display: flex;
+    gap: 120px;
+}
+.singup{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.singup-title{
+    font-size: 4rem;
+    line-height: 50px;
+}
+.singup-input{
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    font-size: 1.3rem;
+}
+.singup-button{
+    height: 60px;
+    background-color: #db4444;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 30px 0px;
+}
+.singup-google-link{
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.singup-login-link{
+    display: flex;
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.singup-login-link a{
+    color: rgba(0,0,0,0.8);
+    line-height: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid  rgba(0,0,0,0.7) ;
+
+}

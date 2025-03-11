@@ -1,0 +1,82 @@
+.link-to-product{
+    text-decoration: none;
+    color: black;
+}
+.flash-cartitem-div{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 350px;
+    border-radius: 4px;
+}
+.flash-cartitem-div .flash-cartitem{
+    position: relative;
+    width: 270px;
+    height: 250px;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+}
+.flash-cartitem-div .flash-cartitem .flash-img img{
+    width: 200px;
+    height: 200px;
+}
+.flash-cartitem-div .flash-cartitem .flash-image .flash-sale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   border-radius: 4px;
+   margin: 10px 0px 0px 10px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: #db4444;
+}
+.flash-cartitem-div .flash-cartitem .flash-image .flash-icons{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    gap: 10px;
+    display: inline-flex;
+    height: 90px;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.flash-cartitem-div .flash-cartitem .flash-image .flash-icons .flash-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.flash-cartitem-div .flash-cartitem .flash-img{
+    display: flex;
+    justify-content: center;
+}
+.flash-cartitem-div .flash-cartitem .add-to-cart{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    bottom: 0px; 
+    width: 270px;
+    height: 40px;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    display: none;
+}
+.flash-cartitem-div:hover .add-to-cart{
+    display: flex;
+}
+.flash-cartitem-div .flash-info{
+    line-height: 10px;
+}
+.flash-cartitem-div .flash-info .new-price{
+    color: red;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
