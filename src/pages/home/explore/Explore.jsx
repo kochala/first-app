@@ -61,7 +61,7 @@ const Explore = () => {
                 grid={{
                   rows: 2,
                 }}
-                spaceBetween={0}
+                spaceBetween={1}
                 modules={[Mousewheel, Keyboard, Pagination, Grid, Navigation]}
                 navigation={true}
                 mousewheel={true}

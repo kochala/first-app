@@ -1,34 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { getProductCategories } from './Categori-api';
-import "./Category.css"
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const Categorypage = () => {
-    const {category_slug} = useParams();
-    const [productList, setProductList] = useState([])
-    useEffect(() => {
-        getProductCategories(category_slug)
-        .then((resp)=>resp)
-        .then((data)=>setProductList(data.products))
-    },[category_slug]) 
+const App = () => {
+  const [categories, setCategories] = useState({});
+
+  useEffect(() => {
+    axios.get("https://dummyjson.com/products") 
+      .then((response) => {
+        const grouped = response.data.reduce((acc, item) => {
+          acc[item.category] = acc[item.category] || [];
+          acc[item.category].push(item);
+          return acc;
+        }, {});
+        setCategories(grouped);
+      })
+      .catch((error) => console.error("Error:", error));
+  }, []);
+
   return (
-    <div className='single-categories'>
-        {productList.map((product)=>(
-          <div className='single-category-div'
-          key={product.title}>
-            <p className='category-title'>{product.title}</p>
-            <img src={product.thumbnail} alt="" />
-            <div className='add-to-cart'> 
-            <span>add to cart</span>
-
-          </div> 
-          </div>
-
- 
-        ))}
+    <div>
+      {Object.keys(categories).map((category) => (
+        <div key={category}>
+          <h3>{category}</h3>
+          <ul>
+            {categories[category].map((item) => (
+              <li key={item.id}>{item.name}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Categorypage
-
+export default App;

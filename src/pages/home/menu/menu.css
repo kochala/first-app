@@ -1,75 +1,405 @@
 .home-menu{
     display: flex;
-}
-.home-menu.dark{
-    background-color: black;
-    color: white;
-}
-.home-menu-list{
-    margin-top: 25px;
-    position: relative;
-    font-size: 1.25rem;
-    width: 250px;
-    border-right: 2px solid rgba(0,0,0,0.2) ;
-    height: 400px;
-    overflow-y: scroll;
-    scrollbar-width: none;
-}
-.home-menu-list a{
-    text-decoration: none;
-    color: black;
-}
-.home-menu.dark .home-menu-list a{
-    text-decoration: none;
-    color: white;
-}
-.home-menu-list p{
-    display: flex;
-    align-items: center;
-}
-.home-menu-list p svg{
-    position: absolute;
-    right: 5px;
-    display: none;
-}
-.home-menu-list p:hover svg{
-    display: block;
-}
+    width: 1300px;
 
+    .home-menu-list{
+        margin-top: 25px;
+        position: relative;
+        font-size: 1.25rem;
+        width: 250px;
+        border-right: 2px solid rgba(0,0,0,0.2) ;
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            display: flex;
+            align-items: center;
+        }
+        p svg{
+            position: absolute;
+            left: 200px;
+            display: none;
+        }
+        p:hover svg{
+            display: block;
+        }
+    }
+    @media (max-width:1200px) {
+        .home-menu-list{
+            margin-top: 25px;
+            font-size: 1.25rem;
+            width: 250px;
+            height: 360px;
+            p svg{
+                left: 200px;
+            }
+        }
+    }
+    
+    @media (max-width:1050px) {
+        .home-menu-list{
+            margin-top: 20px;
+            font-size: 1.1rem;
+            width: 220px;
+            height: 320px;
+            p svg{
+                left: 180px;
+            }
+        }
+    }
+    
+    @media (max-width:950px) {
+        .home-menu-list{
+            margin-top: 15px;
+            font-size: 1rem;
+            width: 200px;
+            height: 280px;
+            p svg{
+                left: 160px;
+            }
+        }
+    }
 
-.home-banner{
-    display: flex;
-    width: 900px;
-    height: 350px;
-    background-color: black;
-    margin: 50px;
-}
-.home-banner .home-banner-text{
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0px 0px 50px;
-    color: white;
-    gap: 30px;
-}
-.home-banner .home-banner-text .apple-logo{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 1.2rem;
-}
-.home-banner .home-banner-text .home-sale{
-    font-size: 3rem;
-    font-weight: bold;
-    padding-right: 110px;
-}
-.home-banner .home-banner-text .home-shop-now a{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid white;
-    width: 135px;
-    font-size: 1.5rem;
-    gap: 15px;
-    text-decoration: none;
-    color: white;
+    @media (max-width:850px) {
+        .home-menu-list{
+            margin-top: 15px;
+            font-size: 1rem;
+            width: 200px;
+            height: 280px;
+            p svg{
+                left: 160px;
+            }
+        }
+    }
+    @media (max-width:750px) {
+        .home-menu-list{
+            margin-top: 15px;
+            font-size: 1rem;
+            width: 170px;
+            height: 260px;
+            p svg{
+                left: 160px;
+            }
+        }
+    }
+    @media (max-width:650px) {
+        .home-menu-list{
+            margin-top: 15px;
+            font-size: 1rem;
+            width: 140px;
+            height: 240px;
+            p svg{
+                left: 160px;
+            }
+        }
+    }
+    @media (max-width:550px) {
+        .home-menu-list{
+            margin-top: 15px;
+            font-size: 1rem;
+            width: 140px;
+            height: 220px;
+            p svg{
+                left: 160px;
+            }
+        }
+    }
+    &.dark{
+        .home-menu-list p{
+            color: rgb(230, 230, 230);
+        }
+    }
+
+    .home-banner{
+        display: flex;
+        width: 900px;
+        height: 350px;
+        background-color: black;
+        margin: 50px;
+        .home-banner-text{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 0px 0px 50px;
+            color: white;
+            gap: 30px;
+            .apple-logo{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: 1.2rem;
+            }
+            .home-sale{
+                font-size: 3rem;
+                font-weight: bold;
+                padding-right: 110px;
+                color: white;
+            }
+            .home-shop-now a{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid white;
+                width: 135px;
+                font-size: 1.5rem;
+                gap: 15px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    @media (max-width:1500px) {
+        .home-banner{
+            width: 900px;
+            height: 350px;
+            margin: 50px;
+            .home-banner-text{
+                width: 350px;
+                padding: 50px;
+                gap: 30px;
+                .apple-logo{
+                    gap: 15px;
+                    font-size: 1.2rem;
+                }
+                .home-sale{
+                    font-size: 3rem;
+                    padding-right: 70px;
+                }
+                .home-shop-now a{
+                    width: 135px;
+                    font-size: 1.5rem;
+                  
+                }
+            }
+            .home-banner-apple img{
+                margin-top: 50px;
+                width: 400px;
+            }
+        } 
+    }
+    @media (max-width:1350px) {
+        .home-banner{
+            width: 750px;
+            height: 330px;
+            margin: 50px;
+            .home-banner-text{
+                width: 350px;
+                padding: 40px;
+                gap: 30px;
+                .apple-logo{
+                    gap: 15px;
+                    font-size: 1.2rem;
+                }
+                .home-sale{
+                    font-size: 2.5rem;
+                    padding-right: 70px;
+                }
+                .home-shop-now a{
+                    width: 135px;
+                    font-size: 1.5rem;
+                  
+                }
+            }
+            .home-banner-apple img{
+                width: 400px;
+                margin-top: 50px;
+            }
+        } 
+    }
+    @media (max-width:1200px) {
+        .home-banner{
+            width: 650px;
+            height: 330px;
+            margin: 45px;
+            .home-banner-text{
+                width: 150px;
+                padding: 40px;
+                gap: 30px;
+                .apple-logo{
+                    gap: 15px;
+                    font-size: 1.2rem;
+                }
+                .home-sale{
+                    font-size: 1.9rem;
+                    padding-right: 20px;
+                }
+                .home-shop-now a{
+                    width: 135px;
+                    font-size: 1.5rem;
+                
+                }
+            }
+            .home-banner-apple img{
+                width: 400px;
+                margin-top: 50px;
+            }
+        } 
+    }
+    @media (max-width:1050px) {
+        .home-banner{
+            width: 560px;
+            height: 300px;
+            margin: 40px;
+            .home-banner-text{
+                width: 200px;
+                padding: 40px;
+                gap: 25px;
+                .apple-logo{
+                    gap: 10px;
+                    font-size: 1rem;
+                }
+                .home-sale{
+                    font-size: 1.8rem;
+                    padding-right: 20px;
+                }
+                .home-shop-now a{
+                    width: 120px;
+                    font-size: 1.3rem;
+                 
+                }
+            }
+            .home-banner-apple img{
+                width: 350px;
+                margin-top: 40px;
+            }
+        }
+    }
+    
+    @media (max-width:950px) {
+        .home-banner{
+            width: 520px;
+            height: 260px;
+            margin: 35px;
+            .home-banner-text{
+                width: 200px;
+                padding: 35px;
+                gap: 22px;
+                .apple-logo{
+                    font-size: 0.95rem;
+                }
+                .home-sale{
+                    font-size: 1.7rem;
+                }
+                .home-shop-now a{
+                    width: 110px;
+                    font-size: 1.2rem;
+                }
+            }
+            .home-banner-apple img{
+                width: 320px;
+            }
+        }
+    }
+    
+    @media (max-width:850px) {
+        .home-banner{
+            width: 450px;
+            height: 260px;
+            margin: 30px;
+            .home-banner-text{
+                width: 130px;
+                padding: 30px;
+                gap: 20px;
+                .apple-logo{
+                    font-size: 0.9rem;
+                }
+                .home-sale{
+                    font-size: 1.6rem;
+                }
+                .home-shop-now a{
+                    width: 105px;
+                    font-size: 1.1rem;
+                }
+            }
+            .home-banner-apple img{
+                width: 250px;
+            }
+        }
+    }
+    
+    @media (max-width:750px) {
+        .home-banner{
+            width: 390px;
+            height: 240px;
+            margin: 25px;
+            .home-banner-text{
+                width: 150px;
+                padding: 20px;
+                gap: 18px;
+                .home-sale{
+                    font-size: 1.4rem;
+                }
+                .home-shop-now a{
+                    width: 95px;
+                    font-size: 1rem;
+                }
+            }
+            .home-banner-apple img{
+                width: 250px;
+            }
+        }
+    }
+    
+    @media (max-width:650px) {
+        .home-banner{
+            width: 340px;
+            height: 220px;
+            margin: 25px;
+            .home-banner-text{
+                width: 100px;
+                padding: 15px;
+                gap: 15px;
+                .home-sale{
+                    font-size: 1.3rem;
+                }
+                .home-shop-now a{
+                    width: 85px;
+                    font-size: 0.9rem;
+                }
+            }
+            .home-banner-apple img{
+                width: 210px;
+            }
+        }
+    }
+    
+    @media (max-width:550px) {
+        .home-banner{
+            width: 300px;
+            height: 180px;
+            margin: 25px;
+            .home-banner-text{
+                width: 150px;
+                padding: 10px;
+                gap: 12px;
+                .home-sale{
+                    font-size: 1.2rem;
+                }
+                .home-shop-now a{
+                    width: 80px;
+                    font-size: 0.8rem;
+                }
+            }
+            .home-banner-apple img{
+                width: 180px;
+            }
+        }
+    }
+    &.dark{ 
+        .home-banner .home-banner-text{
+            .apple-logo{
+                color: rgb(230, 230, 230);
+            }
+            .home-sale{
+                color:  rgb(230, 230, 230);
+            }
+            .home-shop-now a{
+                color: rgb(230, 230, 230);
+            }
+        }
+    }
+    
 }

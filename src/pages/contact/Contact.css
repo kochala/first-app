@@ -10,6 +10,10 @@
     width: 350px;
     padding: 50px;
 }
+.contact-adress-div a{
+    text-decoration: none;
+    color: black;
+}
 .contact-adress{
     width: 250px;
 }

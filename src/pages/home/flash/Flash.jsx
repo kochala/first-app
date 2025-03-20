@@ -79,7 +79,7 @@ useEffect(() => {
               <div className='flash-div'>
                 <Swiper 
                   slidesPerView={4}
-                  spaceBetween={0}
+                  spaceBetween={50}
                   modules={[Mousewheel, Keyboard, Pagination, Grid, Navigation]}
                   navigation={true}
                   mousewheel={true}

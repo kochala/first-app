@@ -22,36 +22,34 @@ const Menu = () => {
 
 
   return (
-    
-        <div className={isDark?'home-menu dark': "home-menu"}>
-              <div className='home-menu-list'>
-                {categories.map((el) =>(
-                  <Link to={`category/${el.slug}`} key={el.slug} >
-                    <p >
-                      {el.name}<MdArrowForwardIos/>
-                    </p>
-                  </Link>
-                ))}
-              </div>
-              <div className='home-banner'> 
-                <div className='home-banner-text'> 
-                  <span className='apple-logo'>
-                    <img src="src/assets/images/home/applelogo.png" alt="" />
-                    iPhone 14 Series
-                  </span>
-                  <span className='home-sale'>
-                    Up to 10% off Voucher
-                  </span>
-                  <span className='home-shop-now'>
-                    <Link key="unique-key">shop now <MdArrowForward/></Link>
-                  </span>
-                </div>
-                <div className='home-banner-apple'>
-                  <img src="src/assets/images/home/applebanner.png" alt="" />
-                </div>
-              </div>
-            </div>
-   
+    <div className={isDark?'home-menu dark': "home-menu"}>
+      <div className='home-menu-list'>
+        {categories.map((el) =>(
+          <Link to={`category/${el.slug}`} key={el.slug} >
+            <p >
+              {el.name}<MdArrowForwardIos/>
+            </p>
+          </Link>
+        ))}
+      </div>
+      <div className='home-banner'> 
+        <div className='home-banner-text'> 
+          <span className='apple-logo'>
+            <img src="src/assets/images/home/applelogo.png" alt="" />
+            iPhone 14 Series
+          </span>
+          <span className='home-sale'>
+            Up to 10% off Voucher
+          </span>
+          <span className='home-shop-now'>
+            <Link key="unique-key">shop now <MdArrowForward/></Link>
+          </span>
+        </div>
+        <div className='home-banner-apple'>
+          <img src="src/assets/images/home/applebanner.png" alt="" />
+        </div>
+      </div>
+    </div>
   )
 }
 

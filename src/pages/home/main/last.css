@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     height: 200px;
-    /* margin: 150px 0px 150px 0px; */
-    /* gap: 70px; */
+    margin: 150px 0px 150px 0px;
+    gap: 70px;
 }
 .last-icon-div{
     display: flex;

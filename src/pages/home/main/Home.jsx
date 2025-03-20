@@ -18,7 +18,6 @@ import { IsDarkContext } from '@/context/IsDarkProvider';
       
     <Menu/>
     <Flash/>
-    {/* <Category/> */}
     <Month/>
 
     <div className='enchance-banner-div'>

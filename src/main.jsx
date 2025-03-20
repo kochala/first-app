@@ -10,7 +10,6 @@ createRoot(document.getElementById('root')).render(
     <IsDarkProvider>
     <App />
     </IsDarkProvider>
-    
     </BrowserRouter>
   </StrictMode>,
 )

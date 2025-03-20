@@ -8,6 +8,10 @@
     font-size: 1.3rem;
     padding: 15px 0 0 15px;
 }
+.category-price{
+    font-size: 1.3rem;
+    padding-left:15px;
+}
 .single-category-div{
     width: 340px;
     height: 400px;
@@ -17,7 +21,7 @@
 .single-category-div img{
     margin-left: 20px;
     width: 300px;
-    height: 260px;
+    height: 220px;
 }
 .add-to-cart{
     justify-content: center;

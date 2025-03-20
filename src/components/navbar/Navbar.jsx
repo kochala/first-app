@@ -14,10 +14,10 @@ const Navbar = () => {
         <span className='text'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
           <a href="">SHOP NOW</a>
         </span>
-        <span>ENGLISH</span>
+        <span className='lenguage'>ENGLISH</span>
       </div>
       <div className='navbar-menu'>
-        <span><h2>EXCLUSIVE</h2></span>
+        <span className='navbar-header'>EXCLUSIVE</span>
         <div className='menu-list'> 
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>

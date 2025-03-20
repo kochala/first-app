@@ -1,24 +1,72 @@
-/* .flash-div{
-    display: flex;
-    gap: 0px;
-    margin-top: 0px;
-    overflow-x: scroll;
-    scrollbar-width: none;
+
+.Flash-div{
+    .flash-timer-div{
+        display: flex;
+        gap: 10px;
+        .flash-timer{
+            display: flex;
+            flex-direction: column;
+            .time-number{
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+        .flash-point{
+            font-size: 3rem;
+            line-height: 70px; 
+            color: #db4444;
+        }
+    }
+    .flash-div{
+        display: flex;
+    }
+}
+&.dark{
+        .flash-timer-div .flash-point{
+            color: #430606; 
+        }
+    }
+/* @media (max-width:1500px) {
+    .Flash-div{
+        width: 100%;
+        .flash-timer-div{
+            display: flex;
+            gap: 10px;
+            .flash-timer .time-number{
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            .flash-point{
+                font-size: 3rem;
+                line-height: 70px; 
+            }
+        }
+        .flash-div{
+            width: 1200px;
+        }
+        .swiper-slide {
+            width: calc(100% );
+          }
+        
+    }
+}
+@media (max-width:1300px) {
+    .Flash-div{
+        width: 100%;
+        .flash-timer-div{
+            display: flex;
+            gap: 10px;
+            .flash-timer .time-number{
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            .flash-point{
+                font-size: 3rem;
+                line-height: 70px; 
+            }
+        }
+        .flash-div{
+            width: 1000px;
+        }
+    }
 } */
-.flash-timer-div{
-    display: flex;
-    gap: 10px;
-}
-.flash-timer-div .flash-timer{
-    display: flex;
-    flex-direction: column;
-}
-.flash-timer-div .flash-timer .time-number{
-    font-size: 3rem;
-    font-weight: bold;
-}
-.flash-timer-div .flash-point{
-    font-size: 3rem;
-    line-height: 70px; 
-    color: #db4444;
-}
