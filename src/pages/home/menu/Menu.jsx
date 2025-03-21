@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MdArrowForwardIos, MdArrowForward} from "react-icons/md";
-import "./Menu.css"
+import "./menu.css"
 import { IsDarkContext } from '@/context/IsDarkProvider';
 
 const Menu = () => {
